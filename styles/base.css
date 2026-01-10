@@ -49,6 +49,7 @@ main h1 {
 
 .card {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: auto;
     margin-top: 0;
@@ -57,6 +58,11 @@ main h1 {
 
 #card_about-me {
     max-width: 60%
+}
+
+#card_links {
+    max-width: 60%;
+    margin-right: 10em;
 }
 
 .card h2 {
@@ -80,7 +86,15 @@ main h1 {
     max-height: 40%;
 }
 
+.card li {
+    text-align: left;
+}
+
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: rgb(44, 43, 42);
     color: #eee;
     padding: 2rem;

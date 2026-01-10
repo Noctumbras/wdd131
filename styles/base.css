@@ -1,12 +1,13 @@
-* {
+/** {
     font-family: "Source Serif 4", serif;
-}
+}*/
 
 header {
     background: rgb(44, 43, 42);
     color: #eee;
     padding: 2rem;
     text-align: center;
+    font-family: "Source Serif 4", serif;
 }
 
 header span {

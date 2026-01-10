@@ -52,10 +52,16 @@ main h1 {
     flex-wrap: wrap;
     margin: auto;
     margin-top: 0;
+    border-style: solid;
+}
+
+#card_about-me {
+    max-width: 60%
 }
 
 .card h2 {
     align-self: stretch;
+    margin: 0;
     background-color: gray;
     height: 2em;
     width: 100%;

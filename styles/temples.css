@@ -1,11 +1,16 @@
 body {
     font-family: "Source Serif 4", serif;
+    background-color: lightgoldenrodyellow;
 }
 
 header {
     text-align: center;
     display: grid;
-    padding: 2rem;
+    font-size: 2rem;
+}
+
+button {
+    margin-bottom: 0;
 }
 
 #hamburger::before {
@@ -21,6 +26,9 @@ nav {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    font-size: 1.5rem;
+    color: black;
+    height: 100%;
 }
 
 nav li {
@@ -31,15 +39,21 @@ ul {
     display: none;
     background-color: lightgray;
     list-style: none;
+    padding: 0.75rem;
 }
 
 ul.open {
     display: flex;
     flex-direction: column;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border: 2px;
+    border-style: dotted;
+    border-top-style: none;
+    margin-top: 0;
 }
 
 ul a {
-    padding: 5rem;
     text-decoration: none;
     text-align: center;
 }
@@ -47,12 +61,15 @@ ul a {
 ul a:hover {
 	font-weight: 700;
 	text-decoration: underline;
-	text-decoration-color: yellow;
+	text-decoration-color: blue;
 }
 
 main {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 1em auto;
+    border: 2px;
+    border-style: solid;
+    background-color: white;
 }
 
 h1 {
@@ -75,4 +92,7 @@ img {
 
 footer {
     text-align: center;
+    background-color: lightblue;
+    padding: 1em;
+    margin: 0;
 }

@@ -1,0 +1,20 @@
+@media screen and (min-width: 500px) {
+    #hamburger {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .album {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .album {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+}

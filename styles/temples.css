@@ -1,0 +1,60 @@
+header {
+    text-align: center;
+    display: grid;
+}
+
+#hamburger::before {
+    content: "☰";
+}
+
+#hamburger.open::before {
+    content: "❌";
+}
+
+ul {
+    display: none;
+    background-color: lightgray;
+    padding: 2rem;
+}
+
+ul.open {
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    flex: 1 1 auto;
+}
+
+nav a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+figcaption {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+}

@@ -6,6 +6,7 @@
     ul {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .album {
@@ -13,7 +14,7 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
     .album {
         grid-template-columns: repeat(3, minmax(200px, 1fr));
     }

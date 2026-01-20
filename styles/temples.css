@@ -1,6 +1,11 @@
+body {
+    font-family: "Source Serif 4", serif;
+}
+
 header {
     text-align: center;
     display: grid;
+    padding: 2rem;
 }
 
 #hamburger::before {
@@ -11,10 +16,21 @@ header {
     content: "❌";
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav li {
+    flex: 1 1 auto;
+}
+
 ul {
     display: none;
     background-color: lightgray;
-    padding: 2rem;
+    list-style: none;
 }
 
 ul.open {
@@ -22,18 +38,20 @@ ul.open {
     flex-direction: column;
 }
 
-nav li {
-    flex: 1 1 auto;
+ul a {
+    padding: 5rem;
+    text-decoration: none;
+    text-align: center;
 }
 
-nav a:hover {
+ul a:hover {
 	font-weight: 700;
 	text-decoration: underline;
 	text-decoration-color: yellow;
 }
 
 main {
-    max-width: 800px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 

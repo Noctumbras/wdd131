@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link ref="stylesheet" href="styles/place.css">
-    <link ref="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
@@ -15,20 +15,20 @@
             <source srcset="images/chicago-large.webp" media="(min-width: 500px)" width="960" height="540">
             <img src="images/chicago-small.webp" alt="alt text" width="320" height="480">
         </picture>
+        <section id="data">
+            <h2>Data</h2>
+            <p>Area: </p>
+            <p>Population: </p>
+            <p>Time Zone: </p>
+        </section>
+        <section id="weather">
+            <h2 id="weatherHeader">Weather</h2>
+            <p id="temperature">Temperature: </p>
+            <p>Conditions: Mostly Cloudy</p>
+            <p id="windSpeed">Wind: </p>
+            <p id="windChill">Wind Chill: </p>
+        </section>
     </div>
-    <section class="card">
-        <h2>Data</h2>
-        <p>Area: </p>
-        <p>Population: </p>
-        <p>Time Zone: </p>
-    </section>
-    <section class="card">
-        <h2 id="weatherHeader">Weather</h2>
-        <p>Temperature: 19° F</p>
-        <p>Conditions: Mostly Cloudy</p>
-        <p>Wind: 8 mph</p>
-        <p id="windChill">Wind Chill: </p>
-    </section>
     <footer>
         <p>
             <span id="currentyear"></span>, Stephen Sanders, Illinois

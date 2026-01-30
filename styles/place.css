@@ -1,3 +1,38 @@
+:root {
+    --sections-color: white;
+    --header-footer-color: lightblue;
+    --small-header-color: red;
+}
+
+body {
+    margin: 0px;
+    text-align: center;
+}
+
 h1 {
-    background-color: lightblue;
+    background-color: var(--header-footer-color);
+    margin: 0px;
+    padding: 1rem;
+}
+
+h2 {
+    background-color: var(--small-header-color);
+    margin: 0px;
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--sections-color);
+}
+
+footer {
+    background-color: var(--header-footer-color);
+    margin: 0px;
+    padding: 0.5rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+
 }

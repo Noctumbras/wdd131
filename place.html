@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Stephen Sanders">
+    <meta name="description" 
+        content="Webpage by Stephen Sanders for WDD 131 - Dynamic Web Fundamentals. Weather for Chicago, Illinois.">
+    <title>WDD131 - Country Page - Stephen Sanders</title>
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
-    <h1>Chicago, Illinois</h1>
-    <div>
+    <header>
+        <h1>Chicago, Illinois</h1>
+    </header>
+    <main>
         <picture>
             <source srcset="images/chicago-large.webp" media="(min-width: 500px)" width="960" height="540">
             <img src="images/chicago-small.webp" alt="alt text" width="320" height="480">
         </picture>
         <section id="data">
             <h2>Data</h2>
-            <p>Area: </p>
-            <p>Population: </p>
-            <p>Time Zone: </p>
+            <p>Area: 234.53 sq mi</p>
+            <p>Population: 2,746,388</p>
+            <p>Time Zone: CST (UTC - 6)</p>
         </section>
         <section id="weather">
             <h2 id="weatherHeader">Weather</h2>
+            <img id="svgWeather" src="images/mostly-cloudy.svg" alt="Cloudy weather icon">
             <p id="temperature">Temperature: </p>
             <p>Conditions: Mostly Cloudy</p>
             <p id="windSpeed">Wind: </p>
             <p id="windChill">Wind Chill: </p>
         </section>
-    </div>
+    </main>
     <footer>
         <p>
             <span id="currentyear"></span>, Stephen Sanders, Illinois

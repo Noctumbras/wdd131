@@ -11,7 +11,11 @@
     <script src="scripts/form.js" defer></script>
 </head>
 <body>
-    <form action="/review.html" method="get">
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <form action="review.html" method="get">
         <fieldset>
             <legend>Product Name</legend>
             <select id="product" name="product" required>
@@ -20,11 +24,12 @@
         </fieldset>
         <fieldset>
             <legend>Overall Rating</legend>
-            <label><input type="radio" id="one-star" name="rating" required>⭐</label>
-            <label><input type="radio" id="two-star" name="rating" required>⭐⭐</label>
-            <label><input type="radio" id="three-star" name="rating" required>⭐⭐⭐</label>
-            <label><input type="radio" id="four-star" name="rating" required>⭐⭐⭐⭐</label>
-            <label><input type="radio" id="five-star" name="rating" required>⭐⭐⭐⭐⭐</label>
+            <input type="radio" id="one-star" name="rating" value="1" required>
+            <label>test</label>
+            <label><input type="radio" id="two-star" name="rating" value="2" required>⭐⭐</label>
+            <label><input type="radio" id="three-star" name="rating" value="3" required>⭐⭐⭐</label>
+            <label><input type="radio" id="four-star" name="rating" value="4" required>⭐⭐⭐⭐</label>
+            <label><input type="radio" id="five-star" name="rating" value="5" required>⭐⭐⭐⭐⭐</label>
         </fieldset>
         <fieldset>
             <legend>Date of Installation</legend>

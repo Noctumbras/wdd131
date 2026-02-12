@@ -1,0 +1,33 @@
+:root {
+    --page-background-color: rgb(166, 247, 163);
+    --header-background-color: rgb(253, 192, 61);
+    --content-background-color: white;
+}
+
+body {
+    background-color: lightgray;
+}
+
+#page-background-color {
+    background-color: var(--page-background-color);
+    padding: 1rem;
+}
+
+#header-background-color {
+    background-color: var(--header-background-color);
+    padding: 1rem;
+}
+
+#content-background-color {
+    background-color: var(--content-background-color);
+    padding: 1rem;
+}
+
+#font-one {
+    font-family: "Source Serif 4", serif;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+}

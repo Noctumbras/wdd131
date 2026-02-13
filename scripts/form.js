@@ -1,5 +1,6 @@
 const date = new Date();
 const productOptions = document.getElementById("product");
+const form = document.querySelector("form");
 const products = [
   {
     id: "fc-1888",
@@ -29,9 +30,15 @@ const products = [
 ];
 
 products.forEach(function(product) {
-    productOptions.innerHTML += `<option value="${product.id}">${product.name}</option>`;
+  productOptions.innerHTML += `<option value="${product.id}">${product.name}</option>`;
 })
 
 
 document.getElementById("currentyear").innerHTML = '\u00A9' + date.getFullYear();
 document.getElementById("lastModified").innerHTML = 'Last modified: ' + document.lastModified;
+
+form.addEventListener('submit', () => {
+  let reviewCount = Number(window.localStorage.getItem("reviewCount")) || 0;
+  reviewCount += 1;
+  localStorage.setItem("reviewCount", reviewCount);
+});

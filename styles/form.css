@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(223, 203, 93);
+}
+
+header, footer {
+    background-color: rgb(161, 147, 66);
+    text-align: center;
+    padding: 1rem;
+}
+
+form {
+    background-color: white;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: 3;
+    margin: 0.5rem;
+}
+
+input[type=submit] {
+    margin: auto;
+}
+
+div {
+    background-color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+    form {
+        width: 50%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Stephen Sanders">
+    <meta name="description" 
+        content="Webpage by Stephen Sanders for WDD 131 - Dynamic Web Fundamentals. Home page for Project.">
+    <title>WDD131 - Project Home - Stephen Sanders</title>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project_submit.css">
+    <script src="scripts/project_submit.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Rabbits & You</h1>
+        <button type="button" id="hamburger"></button>
+        <nav>
+            <ul>
+                <li><a id="home" href="project_home.html" title="Home">Home</a></li>
+                <li><a id="quiz" href="project_quiz.html" title="Quiz">Quiz</a></li>
+                <li><a id="inquiries" href="#" title="Inquiries">Inquiries🐰</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Have a question? Write it up here and send it to us!</p>
+        <form onsubmit="thankAndClearForm(); return false">
+
+        <fieldset>
+            <legend>Your Name</legend>
+            <input type="text" id="username" name="username" required>
+        </fieldset>
+        <fieldset>
+            <legend>Your Email</legend>
+            <input type="text" id="email" name="email" required>
+        </fieldset>
+        <fieldset>
+            <legend>Your Question</legend>
+            <textarea id="review" name="review" required></textarea>
+        </fieldset>
+
+        <input type="submit" value="Send Question" id="submitButton">
+        </form>
+        <p id="thanks"></p>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span>, Stephen Sanders, Illinois
+        </p>
+
+        <p id="lastModified"></p>
+
+        <a href="references.html">Click here for references.</a>
+    </footer>
+</body>
+</html>

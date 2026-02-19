@@ -1,0 +1,60 @@
+:root {
+    --page-background-color: rgb(166, 247, 163);
+    --header-background-color: rgb(253, 192, 61);
+    --button-color: rgb(187, 157, 93);
+    --content-background-color: white;
+}
+
+* {
+    text-align: center;
+}
+
+body {
+    background-color: var(--page-background-color);
+}
+
+header, footer {
+    background-color: var(--header-background-color);
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2;
+    background-color: var(--content-background-color);
+}
+
+button {
+    padding: 2em;
+    background-color: var(--button-color);
+}
+
+image {
+    height: auto;
+    width: auto;
+}
+
+div {
+    display: none;
+    border: 1px;
+    border-style: solid;
+}
+
+.open {
+    display: flex;
+}
+
+footer {
+    padding: 1.5em;
+}
+
+@media screen and (min-width: 500px)
+{
+    #hamburger {
+        display: none;
+    }
+}
